@@ -36,5 +36,10 @@ settings =
         {
             publisherId = "tech.scotth",
         },
+        ["plugin.facebook.v4a"] =
+	        {
+	            publisherId = "com.coronalabs"
+	        },
+    	},
     },
 }
