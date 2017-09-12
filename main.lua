@@ -2,7 +2,7 @@ local likeButton = require("plugin.likeButton")
 local facebook = require("plugin.facebook.v4a")
 local bg = display.newRect( display.contentCenterX, display.contentCenterY, display.actualContentWidth, display.actualContentHeight )
 bg:setFillColor( 0,0,1 )
-
+timer.performWithDelay( 2000, function (  )
+	local myLikeButton = likeButton.newButton({x = display.contentCenterX, y= display.contentCenterY, id = "https://www.facebook.com/CoronaLabs"})
+end )
 local title = display.newText( "Like Button Plugin", display.contentCenterX, 30, native.systemFontBold, 20 )
-
-local myLikeButton = likeButton.newButton({x = display.contentCenterX, y= display.contentCenterY, id = "https://www.facebook.com/CoronaLabs"})
